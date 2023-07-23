@@ -183,7 +183,7 @@ export class WordpressCdkStack extends cdk.Stack {
       },
       secrets: {
         WORDPRESS_DB_PASSWORD: ecs.Secret.fromSecretsManager(dbCredentials),
-        WORDPRESS_AUTH_KEY: ecs.Secret.fromSecretsManager(secretSecureAuthKey),
+        WORDPRESS_AUTH_KEY: ecs.Secret.fromSecretsManager(secretAuthKey),
         WORDPRESS_SECURE_AUTH_KEY: ecs.Secret.fromSecretsManager(secretSecureAuthKey),
         WORDPRESS_LOGGED_IN_KEY: ecs.Secret.fromSecretsManager(secretLoggedInKey),
         WORDPRESS_NONCE_KEY: ecs.Secret.fromSecretsManager(secretNonceKey),
